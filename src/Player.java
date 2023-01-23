@@ -35,7 +35,7 @@ public class Player {
     public void takeTurn(int playerNum){
         Scanner scan = new Scanner(System.in);
         //Surely there is a more efficient way to have a Die OBJECT
-        //Instead of calling its CONSTRUCTOR every time.
+        //Instead of creating one every time we call this METHOD
         Die die = new Die();
         String response;
         int roundPoints = 0, num = 0;
