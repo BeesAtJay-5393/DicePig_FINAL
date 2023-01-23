@@ -36,6 +36,11 @@ public class Player {
         Scanner scan = new Scanner(System.in);
         //Surely there is a more efficient way to have a Die OBJECT
         //Instead of creating one every time we call this METHOD
+        
+        //UPDATE: Instead of creating a DIE CLASS everytime we take a turn,
+        //        We can create one per PLAYER.
+        //        In doing so, we remove the waste of space and/or time
+        //        For creating that CLASS everytime.
         Die die = new Die();
         String response;
         int roundPoints = 0, num = 0;
